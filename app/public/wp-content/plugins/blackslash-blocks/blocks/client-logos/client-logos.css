@@ -1,0 +1,21 @@
+/**
+ *
+ * FOR HEADLESS: Move styles to faust.js /styles folder _blocks.scss ***
+ *
+ */
+
+.client-logos {
+	/* add styles here */
+}
+
+@media screen and (max-width: 1199px) {
+	.client-logos {
+		/* add styles here */ 
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.client-logos {
+		/* add styles here */ 
+	}
+}

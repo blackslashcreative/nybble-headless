@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"name": "acf/client-logos",
+	"title": "Client Logos",
+	"description": "A custom block to display a row of client logos or small images.",
+	"style": [ "file:./client-logos.css" ],
+	"category": "acf",
+	"icon": "images-alt2",
+	"keywords": ["client", "logos", "images"],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "client-logos.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}
