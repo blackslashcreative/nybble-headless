@@ -46,8 +46,8 @@ export default function Page(props) {
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Acme Inc",
-      subject: "New Contact Message from your Website",
+      from_name: "nybble app",
+      subject: "New Contact made in nybble app",
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -71,7 +71,7 @@ export default function Page(props) {
       <Main>
         <Container>
           <h1 className="hero">Contact Us</h1>
-          <p className="purple">Send us a message</p>
+          <p>Send us a message! We'd love to work with you to build your headless WordPress / Next.js app :)</p>
 
           {/* Begin web3 contact form */}
           <form onSubmit={handleSubmit(onSubmit)} className="my-10">

@@ -5,10 +5,9 @@ import {
   Container, 
   NavigationMenu, 
   SkipNavigationLink, 
-  Cart 
 } from '../../components';
 import styles from './Header.module.scss';
-import Image from 'next/image'
+import Modal from '../Modal/Modal';
 
 let cx = classNames.bind(styles);
 
@@ -30,20 +29,11 @@ export default function Header({
               </Link>
               {description && <p className={cx('description')}>{description}</p>}
             </div>
-            {/*<button
-              type="button"
-              className={cx('nav-toggle')}
-              onClick={() => setIsNavShown(!isNavShown)}
-              aria-label="Toggle navigation"
-              aria-controls={cx('primary-navigation')}
-              aria-expanded={isNavShown}
-            >
-              ☰
-            </button>*/}
             <NavigationMenu
               className={cx(['primary-navigation', isNavShown ? 'show' : undefined])}
               menuItems={menuItems}
             />
+            <Modal />
         </div>
       </Container>
     </header>

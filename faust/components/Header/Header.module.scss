@@ -10,18 +10,18 @@
 
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
+	align-items: center;
 	flex-wrap: wrap;
-	padding: 1rem 0;
+	padding: 0;
 	gap: 1rem;
+	min-height: 80px;
 }
 
 .brand {
+	margin-right: auto; /* align to left of flexbox */ 
 	font-weight: var(--wpe--font-weight--bold);
 	font-size: 1.6rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
 .title {

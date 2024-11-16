@@ -5,13 +5,16 @@ import { FaustProvider } from '@faustwp/core';
 import '@faustwp/core/dist/css/toolbar.css';
 import '../styles/global.scss';
 import '../styles/tailwind.css';
+import { AppContextProvider } from '../appContext';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   return (
     <FaustProvider pageProps={pageProps}>
-      <Component {...pageProps} key={router.asPath} />
+      <AppContextProvider>
+        <Component {...pageProps} key={router.asPath} />
+      </AppContextProvider>
     </FaustProvider>
   );
 }

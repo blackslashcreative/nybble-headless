@@ -14,7 +14,7 @@ export default function Footer({ title, menuItems }) {
       <Container className="flex pb-10 footer-container">
         <Image src="/img/logo.svg" width={56} height={108} alt="nybble logo" className="mr-8 mb-2"/>
         <div className="grow mb-4">
-          <p>Let's build your site!</p>
+          <p className="text-sm mb-1">Let's build your site!</p>
           <Link href="/contact"><button className="button">Contact Us</button></Link>
           {/*<NavigationMenu menuItems={menuItems} className="footer-nav" />*/}
         </div>

@@ -49,3 +49,38 @@ faust/.env.local
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+#### FAUST ######
+# dependencies
+faust//node_modules
+faust//.pnp
+faust/.pnp.js
+
+# testing
+faust/coverage
+
+# next.js
+faust/.next/
+faust/out/
+
+# production
+faust/build
+
+# misc
+faust/.DS_Store
+faust/*.pem
+
+# debug
+faust/npm-debug.log*
+faust/yarn-debug.log*
+faust/yarn-error.log*
+
+# local env files
+faust/.env*.local
+
+# vercel
+faust/.vercel
+
+# typescript
+faust/*.tsbuildinfo
+faust/next-env.d.ts
